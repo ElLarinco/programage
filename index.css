@@ -175,6 +175,7 @@ a {
     border-bottom: thin solid gainsboro;
     box-shadow: 5px 10px 7.5px gainsboro;
     border-radius: 1rem;
+    text-align: center;
 }
 .language:nth-child(even) {
     color: var(--light);
@@ -197,6 +198,9 @@ a {
 }
 .language > .body::after {
     content: '"';
+}
+.language > i {
+    font-size: 5em;
 }
 i {
     font-size: 3em;
@@ -277,6 +281,9 @@ i {
 @media screen and (min-width: 820px) {
     .App-header {
         background-size: 100% 100%;
+    }
+    .language > i {
+        font-size: 4em;
     }
     .burguer-btn {
         display: none;
