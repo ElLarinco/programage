@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+    --primary: #00ADB5;
+    --secondary: #393E46;
+    --light: #EEEEEE;
+    --dark: #222831;
+    --soft-transition: all .15s ease-in-out;
+}
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+.App-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.App-header {
+    background-image: url("./bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+.btn {
+    padding: .25rem .5rem;
+    color: var(--light);
+    background-color: var(--primary);
+    border: none;
+    border-radius: .25rem;
+}
+.navbar {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-logo {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: var(--soft-transition);
+}
+.nav-item {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+    letter-spacing: .15rem;
+    border-top: thin solid gainsboro;
+}
+.nav-item > a {
+    color: var(--light);
+    transition: var(--soft-transition);
+    font-size: 1.2em;
+}
+.nav-item > a:hover {
+    color: var(--primary);
+}
+.nav-logo > a {
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.burguer-btn > i {
+    font-size: 1.4em;
+}
+.burguer-btn {
+    padding: .5rem .75rem;
+}
+.contact-item > .btn {
+    padding: .75rem;
+}
+.contact-item > a:hover {
+    color: var(--light);
+}
+.show-links {
+    height: 213.23px;
+}
+.App-main {
+    flex: 1 1 auto;
+    width: 90vw;
+    max-width: 1200px;
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+.App-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    background-color: var(--secondary);
+    font-size: .8em;
+}
+.App-footer > .copyright {
+    font-size: 1.2em;
+}
+.author {
+    color: var(--primary);
+}
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-not-found > h1 {
+    font-size: 5em;
+    margin-bottom: 0;
+}
+.page-not-found > p {
+    font-size: 2em;
+}
+.hero-container {
+    color: var(--light);
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    animation: hero-container 10s ease-in-out infinite both alternate;
+}
+@keyframes hero-container {
+    0% {
+        background-position: bottom;
+    }
+    100% {
+        background-position: top;
+    }
+}
+.hero-header > .title {
+    font-size: 2em;
+}
+.hero-header > .body {
+    font-size: 1.2em;
+}
+.languages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.language {
+    color: var(--dark);
+    background-color: var(--light);
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: thin solid gainsboro;
+    box-shadow: 5px 10px 7.5px gainsboro;
+    border-radius: 1rem;
+}
+.language:nth-child(even) {
+    color: var(--light);
+    background-color: var(--dark);
+}
+.language > a {
+    font-weight: bold;
+    color: var(--primary);
+    padding-top: 2rem;
+}
+.language > .title {
+    font-size: 2em;
+}
+.language > .body {
+    margin: 1rem;
+    font-size: 1.2em;
+}
+.language > .body::before {
+    content: '"';
+}
+.language > .body::after {
+    content: '"';
+}
+i {
+    font-size: 3em;
+}
+.fa-python {
+    color: #0F4C75;
+}
+.fa-html5 {
+    color: #F08A5D;
+}
+.fa-css3-alt {
+    color: #3282B8;
+}
+.fa-js {
+    color: #FFC93C;
+}
+.fa-php {
+    color: #3F72AF;
+}
+.fa-bootstrap {
+    color: #6639A6;
+}
+.fa-sass {
+    color: #FCBAD3;
+}
+.fa-react {
+    color: #08D9D6;
+}
+.fa-database {
+    color: var(--secondary);
+}
+.fa-laravel {
+    color: #E84545;
+}
+.nav-item > a.active {
+    color: var(--primary);
+}
+.main-title {
+    font-size: 2em;
+}
+.contact-card {
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 5px 10px 7.5px gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card > img {
+    width: 100%;
+}
+.contact-text > .title {
+    font-size: 2em;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.contact-text > .title > a {
+    margin-right: .5rem;
+}
+.contact-text > .body {
+    font-size: 1.2em;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.github-social {
+    font-size: 1.25em;
+}
+@media screen and (min-width: 820px) {
+    .App-header {
+        background-size: 100% 100%;
+    }
+    .burguer-btn {
+        display: none;
+    }
+    .hero-header > .title {
+        font-size: 4em;
+    }
+    .hero-header > .body {
+        font-size: 2em;
+    }
+    .nav-logo > a {
+        letter-spacing: .5rem;
+    }
+    .navbar {
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-logo {
+        height: auto;
+        margin-right: 1rem;
+    }
+    .nav-links {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-item {
+        border: none;
+        margin-left: 1rem;
+    }
+    .App-footer {
+        font-size: 1.1em;
+    }
+    .languages-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+    .language {
+        padding: 1rem;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .contact-card {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact-text {
+        padding: 1rem;
+    }
+    .contact-card > img {
+        width: 18rem;
+    }
+}

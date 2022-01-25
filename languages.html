@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes | ProgramAge</title>
+
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="App-body">
+    <header class="App-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="/index.html">
+                    ProgramAge
+                </a>
+                <button type="button" class="btn burguer-btn" id="burguer-btn">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="nav-item">
+                    <a href="./index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="./languages.html">
+                        Lenguajes
+                    </a>
+                </li>
+                <li class="nav-item contact-item">
+                    <a class="btn" href="./contacts.html">
+                        Contactos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="App-main">
+        <section>
+            <h2 class="main-title">Lenguajes</h2>
+            <div class="languages-container">
+                <div class="language">
+                    <h3 class="title">Python</h3>
+                    <i class="fab fa-python"></i>
+                    <blockquote class="body">
+                        <cite>
+                            Python is powerful... and fast;
+                            plays well with others;
+                            runs everywhere;
+                            is friendly & easy to learn;
+                            is Open.
+                        </cite>
+                    </blockquote>
+                    <a href="https://www.python.org/" target="_blank">Ver más...</a>
+                </div>
+                <div class="language">
+                    <h3 class="title">HTML</h3>
+                    <i class="fab fa-html5"></i>
+                    <blockquote class="body">
+                        <cite>
+                            HTML (HyperText Markup Language) is the most basic building block of the Web
+                        </cite>
+                    </blockquote>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Ver más...</a>
+                </div>
+                <div class="language">
+                    <h3 class="title">CSS</h3>
+                    <i class="fab fa-css3-alt"></i>
+                    <blockquote class="body">
+                        <cite>
+                            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a web document
+                        </cite>
+                    </blockquote>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Ver más...</a>
+                </div>
+                <div class="language">
+                    <h3 class="title">JavaScript</h3>
+                    <i class="fab fa-js"></i>
+                    <blockquote class="body">
+                        <cite>
+                            JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
+                        </cite>
+                    </blockquote>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Ver más...</a>
+                </div>
+                <div class="language">
+                    <h3 class="title">PHP</h3>
+                    <i class="fab fa-php"></i>
+                    <blockquote class="body">
+                        <cite>
+                            PHP is a popular general-purpose scripting language that is especially suited to web development.
+                        </cite>
+                    </blockquote>
+                    <a href="https://www.php.net/" target="_blank">Ver más...</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="App-footer">
+        <div class="copyright">
+            <p>
+                &copy; <span id="year"></span> ProgramAge: Built by <a class="author" target="_blank" href="https://github.com/ElLarinco">Larin</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
