@@ -14,11 +14,10 @@ a {
     color: var(--secondary);
     text-decoration: none;
 }
-.App-body {
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 .App-header {
     background-image: url("./bg.svg");
